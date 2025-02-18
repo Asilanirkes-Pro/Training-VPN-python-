@@ -1,0 +1,23 @@
+[project]
+name = "training-vpn-python-"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Asilanirkes",email = "108576382+Asilanirkes@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.poetry]
+# Указываем, где находится наш код
+packages = [
+  {include = "client"},
+  {include = "server"},
+  {include = "common"}
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
